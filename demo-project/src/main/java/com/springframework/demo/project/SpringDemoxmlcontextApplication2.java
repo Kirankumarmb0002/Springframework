@@ -24,9 +24,11 @@ public class SpringDemoxmlcontextApplication2 {
 		
 		Logger LOGGER=LoggerFactory.getLogger(SpringDemoxmlcontextApplication2.class);
 		try(ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml")){
-		
+			
+			LOGGER.info("All Objects info -> {} ",(Object)applicationContext.getBeanDefinitionNames());
+			
 			xmlPersonDao xmlperson = applicationContext.getBean(xmlPersonDao.class);
-			LOGGER.info("{}",xmlperson.getXmlJdbcConnection());
+			LOGGER.info("Objects info -> {},{} ",xmlperson,xmlperson.getXmlJdbcConnection());
 		}
 	}
 

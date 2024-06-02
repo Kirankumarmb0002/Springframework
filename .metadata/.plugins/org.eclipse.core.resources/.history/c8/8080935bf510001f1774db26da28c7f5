@@ -1,0 +1,10 @@
+package com.springframework.demo.project;
+
+public class BinnarySearchImpl {
+	public int search(int[] numbers, int numbertosearch) {
+		Bubblesort bsort = new Bubblesort();
+		int[] sortednumbers = bsort.sort(numbers);
+
+		return 3;
+	}
+}

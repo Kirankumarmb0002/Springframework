@@ -1,0 +1,16 @@
+package com.springframework.demo.project;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SpringDemoProjectApplication {
+
+	public static void main(String[] args) {
+		//SpringApplication.run(SpringDemoProjectApplication.class, args);
+		BinnarySearchImpl binnarysearch =new BinnarySearchImpl(new Bubblesort());
+		int result = binnarysearch.search(new int[] {10, 20,2,},2);
+		System.out.println(result);
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.springframework.demo.project;
+
+public interface SortAlgo {
+
+}

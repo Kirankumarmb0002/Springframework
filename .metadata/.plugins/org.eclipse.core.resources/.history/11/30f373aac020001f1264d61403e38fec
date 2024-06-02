@@ -1,0 +1,10 @@
+package com.springframework.demo.project.properties;
+
+public class SomeExternalService {
+
+	private String url;
+	
+	public String returnServiceURL() {
+		return url;
+	}
+}

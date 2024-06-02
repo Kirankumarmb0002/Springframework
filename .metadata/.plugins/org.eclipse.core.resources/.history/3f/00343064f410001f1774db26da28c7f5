@@ -1,0 +1,8 @@
+package com.springframework.demo.project;
+
+public class BinnarySearchImpl {
+	public int search(int [] numbers,int numbertosearch) {
+		
+		return 3;
+	}
+}

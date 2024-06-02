@@ -1,0 +1,30 @@
+package com.springframework.demo.project;
+
+//import org.springframework.boot.SpringApplication;
+//import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+import com.springframework.demo.project.basic.BinnarySearchImpl;
+
+@Configuration
+@ComponentScan("com.springframework.demo.project.basic")
+public class SpringDemobasicexternalPropertiesApplication {
+
+	public static void main(String[] args) {
+		
+		
+		
+		try(AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(SpringDemobasicexternalPropertiesApplication.class)){
+		
+		BinnarySearchImpl binnarySearchImpl = applicationContext.getBean(BinnarySearchImpl.class);
+	
+		System.out.println(result);
+		
+		}
+	}
+
+}

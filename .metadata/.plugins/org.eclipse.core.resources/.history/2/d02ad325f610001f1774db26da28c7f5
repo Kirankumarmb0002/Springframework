@@ -1,0 +1,21 @@
+package com.springframework.demo.project;
+
+public class BinnarySearchImpl {
+	private SortAlgo sortAlgo;
+
+	
+	
+	public BinnarySearchImpl(SortAlgo sortAlgo) {
+		super();
+		this.sortAlgo = sortAlgo;
+	}
+
+
+
+	public int search(int[] numbers, int numbertosearch) {
+		Bubblesort bsort = new Bubblesort();
+		int[] sortednumbers = bsort.sort(numbers);
+		// logic for binary search
+		return 3;
+	}
+}
